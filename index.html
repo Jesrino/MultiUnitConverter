@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi Unit Converter</h1>
+        
+        <div class="converter-options">
+            <button class="converter-btn active" data-conversion="kmToMiles">Kilometers to Miles</button>
+            <button class="converter-btn" data-conversion="milesToKm">Miles to Kilometers</button>
+            <button class="converter-btn" data-conversion="celsiusToFahrenheit">Celsius to Fahrenheit</button>
+            <button class="converter-btn" data-conversion="fahrenheitToCelsius">Fahrenheit to Celsius</button>
+            <button class="converter-btn" data-conversion="usdToPesos">USD to Philippine Pesos</button>
+            <button class="converter-btn" data-conversion="pesosToUsd">Philippine Pesos to USD</button>
+        </div>
+
+        <div class="converter-panel">
+            <h2 id="conversion-title">Kilometers to Miles</h2>
+            <div class="input-group">
+                <input type="number" id="input-value" placeholder="Enter value">
+                <span id="input-unit">Kilometers</span>
+            </div>
+            <button id="convert-btn">Convert</button>
+            <div class="result">
+                <p id="result-text">Result will appear here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
